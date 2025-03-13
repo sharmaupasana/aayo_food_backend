@@ -7,7 +7,7 @@ class OrganizationSetting(models.Model):
     logo = models.ImageField(upload_to='logos/', null=True, blank=True)
     address = models.CharField(max_length=255, null=True, blank=True)
     phone = models.CharField(max_length=255, null=True, blank=True)
-    currency = models.CharField(max_length=255, null=True, blank=True, default="Rs")
+    currency = models.CharField(max_length=255, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     
     def __str__(self):
